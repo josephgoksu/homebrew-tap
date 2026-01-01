@@ -5,21 +5,21 @@
 class Taskwing < Formula
   desc "AI-Native Task Management - Generate context-aware dev tasks that match your architecture"
   homepage "https://taskwing.app"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.0.0/TaskWing_Darwin_x86_64.tar.gz"
-      sha256 "439fb61ca4c4434a901dac9b616d09890bf358ca626dc741cd64f22f55680b43"
+      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.0.1/TaskWing_Darwin_x86_64.tar.gz"
+      sha256 "df60001e13fb2feaec54a97737a40efcc11be185c8a8ad2e365ce24fe9cf289b"
 
       def install
         bin.install "taskwing"
       end
     end
     on_arm do
-      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.0.0/TaskWing_Darwin_arm64.tar.gz"
-      sha256 "a9ace8a99917a16b44256e6f6b2fdd367359125a03c5b0fb5a75df7e3876e8e8"
+      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.0.1/TaskWing_Darwin_arm64.tar.gz"
+      sha256 "85af97614d2001286b72e9e5ee02bb9d8dd9d2f0ca8f41f1a10a947cb1f0ed54"
 
       def install
         bin.install "taskwing"
@@ -29,16 +29,16 @@ class Taskwing < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.0.0/TaskWing_Linux_x86_64.tar.gz"
-      sha256 "b7b4f7a8bc3ef2d765c6f5a126fb8238377508f780e23448efad2d13b665f296"
+      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.0.1/TaskWing_Linux_x86_64.tar.gz"
+      sha256 "a00082c9a37bedb8082a1a7d508b137681dc0a91210898a6cf11ac41104fbfc8"
 
       def install
         bin.install "taskwing"
       end
     end
     on_arm do
-      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.0.0/TaskWing_Linux_arm64.tar.gz"
-      sha256 "5a4f46a7d36694abf3be21b4f70cb5522d4104c58d4a3ac6d921fb420ba1d2f8"
+      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.0.1/TaskWing_Linux_arm64.tar.gz"
+      sha256 "d0e99744a69a00f50a3c27dbff8e38e69ffbc7576ef3cbfd0d8ef16b426f04a2"
 
       def install
         bin.install "taskwing"
