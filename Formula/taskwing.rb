@@ -11,7 +11,7 @@ class Taskwing < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/josephgoksu/TaskWing/releases/download/v1.4.7/TaskWing_Darwin_x86_64.tar.gz"
-      sha256 "26918992c14bb54ae8f715e61e60e0089e7d81890e9e20673c8fc299ea5dc890"
+      sha256 "84b8b710661bb11f20255052bfc974e4cff7e4c49ce948c8767b3b306eaaef11"
 
       def install
         bin.install "taskwing"
@@ -19,7 +19,7 @@ class Taskwing < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/josephgoksu/TaskWing/releases/download/v1.4.7/TaskWing_Darwin_arm64.tar.gz"
-      sha256 "d5f0454ea3554823b4fa505d62d19c799a1eb9536f68db615484d9f48e3c42c9"
+      sha256 "d9b95a4d9211e0ae4c2f8876665c22d57abcca00fca406ec3b8d43b2412bdf28"
 
       def install
         bin.install "taskwing"
@@ -30,14 +30,14 @@ class Taskwing < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/josephgoksu/TaskWing/releases/download/v1.4.7/TaskWing_Linux_x86_64.tar.gz"
-      sha256 "425d19e24dbb4eef5c2235b74aa0d8908c47cd57626e8af08779ea7f12ca6325"
+      sha256 "c8aaf213375e43c108f96f93d00b45fa6ca5288d3481762419c536710cd13290"
       def install
         bin.install "taskwing"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/josephgoksu/TaskWing/releases/download/v1.4.7/TaskWing_Linux_arm64.tar.gz"
-      sha256 "f9ebafba5fa668ec82e5da9229e39c4c55ddbc3adbaa9f213f8484413610df00"
+      sha256 "bf16fe76395dc8afd2086bcb3ad30e96e6825975bbf495c542e8b5f4b20defd3"
       def install
         bin.install "taskwing"
       end
