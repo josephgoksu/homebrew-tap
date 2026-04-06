@@ -5,21 +5,21 @@
 class Taskwing < Formula
   desc "AI-Native Task Management - Generate context-aware dev tasks that match your architecture"
   homepage "https://taskwing.app"
-  version "1.22.2"
+  version "1.22.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.22.2/TaskWing_Darwin_x86_64.tar.gz"
-      sha256 "afaf043f1f4fda55f6bb5ed258080c1ee3635187b99da624407826077668fa89"
+      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.22.4/TaskWing_Darwin_x86_64.tar.gz"
+      sha256 "25acc85cf83035d3f0cc90d303c3b1583d9b0e2aee08037c6fd57971e2031962"
 
       define_method(:install) do
         bin.install "taskwing"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.22.2/TaskWing_Darwin_arm64.tar.gz"
-      sha256 "26d3b1e829a27a685421cecf40c6df726fe7e3aa6420844127624a232ed6b903"
+      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.22.4/TaskWing_Darwin_arm64.tar.gz"
+      sha256 "00a86b4f2c4f21f3e566466b52b1334c9db4f7927e79e01d93cbd8fdedbad514"
 
       define_method(:install) do
         bin.install "taskwing"
@@ -29,15 +29,15 @@ class Taskwing < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.22.2/TaskWing_Linux_x86_64.tar.gz"
-      sha256 "cb5d518d168715450fcd9f99bdaa80459e91678c033306ea2e4445ce0267275d"
+      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.22.4/TaskWing_Linux_x86_64.tar.gz"
+      sha256 "e4dfde9d7a96573411bdf8dd69cb767c387994ad9bd542ac00518055ac6ac77c"
       define_method(:install) do
         bin.install "taskwing"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.22.2/TaskWing_Linux_arm64.tar.gz"
-      sha256 "6a01f452827f6fb476b2aeb581c496893e0c35e2bb7fb79cbe4b1f711c3ec212"
+      url "https://github.com/josephgoksu/TaskWing/releases/download/v1.22.4/TaskWing_Linux_arm64.tar.gz"
+      sha256 "72cf55b8348e7ea025318e7c5a15fd1635efce556d00a38f423cb298084dec71"
       define_method(:install) do
         bin.install "taskwing"
       end
