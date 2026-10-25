@@ -1,6 +1,6 @@
 cask "strain" do
-  version "0.1.0"
-  sha256 "08774a8b407f38add3f2ff8447c8a7d311c8b616aae105633509dfaf524bc1a8"
+  version "0.1.1"
+  sha256 "15438664296e4d7efef1b957aab211606ed7cb7fec3683e1d304a75fd889e583"
 
   url "https://github.com/josephgoksu/strain/releases/download/v#{version}/Strain.zip"
   name "Strain"
