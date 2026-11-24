@@ -5,23 +5,23 @@
 class Taskwing < Formula
   desc "Open source harness for parallel coding agents in sandboxes"
   homepage "https://taskwing.app"
-  version "2.0.0-alpha.3"
+  version "2.0.0-alpha.4"
   license "AGPL-3.0-only"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/josephgoksu/TaskWing/releases/download/v2.0.0-alpha.3/taskwing_2.0.0-alpha.3_darwin_amd64.tar.gz"
-      sha256 "c442bd372a18da7c8ef406a91cbcdc0c88c477c37222aba31b59689e0cc8db1f"
+      url "https://github.com/josephgoksu/TaskWing/releases/download/v2.0.0-alpha.4/taskwing_2.0.0-alpha.4_darwin_amd64.tar.gz"
+      sha256 "7e50fdf47cd2f91fe57c9eb2214e95781bf450ca623fb68b4bbb1c3d47b0a996"
 
       define_method(:install) do
         bin.install "taskwing"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/josephgoksu/TaskWing/releases/download/v2.0.0-alpha.3/taskwing_2.0.0-alpha.3_darwin_arm64.tar.gz"
-      sha256 "b4e13791243cd3fac73b461268ee63dfe2235543a54bb1402e7067d63d6d9723"
+      url "https://github.com/josephgoksu/TaskWing/releases/download/v2.0.0-alpha.4/taskwing_2.0.0-alpha.4_darwin_arm64.tar.gz"
+      sha256 "f85bbd0c6947be2586ee6d7e7bad12b85ad14f7f68e15a5f41391f7932c7e807"
 
       define_method(:install) do
         bin.install "taskwing"
@@ -31,15 +31,15 @@ class Taskwing < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/josephgoksu/TaskWing/releases/download/v2.0.0-alpha.3/taskwing_2.0.0-alpha.3_linux_amd64.tar.gz"
-      sha256 "6c1420f8844e97143221c2cf67d6755f6f3b5658a2e0e008aa70a21cf1d81764"
+      url "https://github.com/josephgoksu/TaskWing/releases/download/v2.0.0-alpha.4/taskwing_2.0.0-alpha.4_linux_amd64.tar.gz"
+      sha256 "21407d7ed65b54febe1a698660d0a551a7eefad634171f03ae407e1c58d68466"
       define_method(:install) do
         bin.install "taskwing"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/josephgoksu/TaskWing/releases/download/v2.0.0-alpha.3/taskwing_2.0.0-alpha.3_linux_arm64.tar.gz"
-      sha256 "080ac80ab72d838836cd9134550db52e730fb495ba4fcaa00154dc9d54d403fa"
+      url "https://github.com/josephgoksu/TaskWing/releases/download/v2.0.0-alpha.4/taskwing_2.0.0-alpha.4_linux_arm64.tar.gz"
+      sha256 "654632049a500a3e4926274a54a35a1a0c07afee79dbf7f08dbc7c26d6b7fb92"
       define_method(:install) do
         bin.install "taskwing"
       end
