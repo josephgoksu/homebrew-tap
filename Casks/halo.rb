@@ -1,6 +1,6 @@
 cask "halo" do
-  version "1.0.0"
-  sha256 "1f7f7a255ddeccb5b92759f9cabf0e1459c987a5af5230fcaa303e63159992dd"
+  version "1.0.1"
+  sha256 "934ffdafee41262d9f713bf266d7aff237e7714f2ac9ceded8fac9297339f51a"
 
   url "https://github.com/josephgoksu/halo-releases/releases/download/v#{version}/Halo.zip"
   name "Halo"
@@ -12,7 +12,7 @@ cask "halo" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Halo.app"
 
