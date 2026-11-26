@@ -1,6 +1,6 @@
 cask "halo" do
-  version "1.0.5"
-  sha256 "feb3b6ff31b72fbf3fad5ebb51d064b7677a1e6dfad31a4476515670a7c695dc"
+  version "1.0.6"
+  sha256 "735f3910996023f5b9077deb1a978d19203078bd1c756de87b181d8f472e49c3"
 
   url "https://github.com/josephgoksu/halo-releases/releases/download/v#{version}/Halo.zip"
   name "Halo"
